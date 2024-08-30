@@ -5,11 +5,47 @@
     padding: 0;
 }
 
+
+/* Generic Styles */
 body {
     display: grid;
     grid-template: 1fr / 1fr 5fr;
 }
 
+img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Other Styles */
 .sidebar {
     height: 100vh;
+}
+
+.mainSection {
+
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottomHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainContainer {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.projects {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template: 4fr 1fr 1fr / 1fr;
 }
