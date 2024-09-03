@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+:root {
+    --blue: rgb(0, 132, 255);
+    --white: white;
+}
+
 
 /* Generic Styles */
 body {
@@ -21,10 +26,22 @@ img {
 /* Other Styles */
 .sidebar {
     height: 100vh;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.dashLink {
+    display: flex;
+    gap: 10px;
 }
 
 .mainSection {
-
 }
 
 .topHeader {
@@ -44,8 +61,7 @@ img {
 }
 
 .projects {
-    grid-row-start: 1;
-    grid-row-end: 3;
     display: grid;
-    grid-template: 4fr 1fr 1fr / 1fr;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-row: 1 / 3;
 }
