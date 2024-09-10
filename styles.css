@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -8,6 +8,7 @@
 :root {
     --blue: rgb(0, 132, 255);
     --white: white;
+    --blueShade: rgb(239, 239, 255);
 }
 
 
@@ -25,7 +26,7 @@ img {
 
 /* Other Styles */
 .sidebar {
-    height: 100vh;
+    height: 100%;
     background-color: var(--blue);
     color: var(--white);
     padding: 20px;
@@ -41,7 +42,8 @@ img {
     gap: 10px;
 }
 
-.mainSection {
+.icon {
+    width: 20px;
 }
 
 .topHeader {
@@ -57,12 +59,9 @@ img {
     align-items: center;
 }
 
-.icon {
-}
-
 .topHeaderRight {
     display: flex;
-    width: 17%;
+    width: 20%;
     gap: 10px;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +69,10 @@ img {
 
 .searchBar {
     width: 75%;
+    height: 22.5px;
     border-radius: 10px;
+    background-color: var(--blueShade);
+    padding: 2.5px 10px;
 }
 
 .profileIcon {
@@ -79,10 +81,34 @@ img {
     border-radius: 25px;
 }
 
+.profileName {
+    font-weight: bold;
+}
+
+.profileNameAt {
+    font-size: 1.5rem;
+}
+
 .bottomHeader {
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: center;
+    padding: 10px 40px;
+    box-shadow: 0 8px 6px -6px rgb(194, 194, 194);
+}
+
+.bottomHeader button {
+    width: 70px;
+    margin: 10px 0px;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: none;
+}
+
+.bottomHeaderLeft {
+    display: flex;
+    width: 66%;
+    gap: 10px;
 }
 
 .profileIconLarge {
@@ -91,12 +117,40 @@ img {
     border-radius: 25px;
 }
 
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottomHeaderRight {
+    display: flex;
+    width: 34%;
+    gap: 10px;
+    justify-content: end;
+}
+
+.mainContainerTitles {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--blueShade);
+    margin-top: 6px;
+}
+
+.mainContainerTitles h1 {
+    font-size: 1rem;
+    margin: 10px 10px 0 10px
+}
+
 .mainContainer {
+    background-color: var(--blueShade);
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    height: 100%;
 }
 
 .projects {
+    height: 100%;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-row: 1 / 3;
@@ -105,4 +159,8 @@ img {
 
 .card {
     margin: 10px;
+    background-color: var(--white);
+    box-shadow: 8px 8px 6px -6px rgb(194, 194, 194);
+    padding: 40px 10px;
+    border-radius: 10px;
 }
