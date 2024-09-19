@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -160,11 +160,15 @@ img {
 
 .card {
     display: flex;
-    margin: 10px;
+    margin: 10px 15px;
     background-color: var(--white);
     box-shadow: 8px 8px 6px -6px rgb(194, 194, 194);
     padding: 0px 10px 0px 0px;
     border-radius: 10px;
+}
+
+.card h2, h3 {
+    font-size: 1rem;
 }
 
 .cardColor {
@@ -177,11 +181,12 @@ img {
 }
 
 .cardInfo {
-    margin: 10px 0px
+    margin: 20px 20px
 }
 
 .card p {
     font-size: 0.75rem;
+    margin-bottom: 10px;
 }
 
 .cardIcons ul {
